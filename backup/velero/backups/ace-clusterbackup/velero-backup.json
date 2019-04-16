@@ -1,0 +1,42 @@
+{
+  "kind": "Backup",
+  "apiVersion": "velero.io/v1",
+  "metadata": {
+    "name": "ace-clusterbackup",
+    "namespace": "velero",
+    "selfLink": "/apis/velero.io/v1/namespaces/velero/backups/ace-clusterbackup",
+    "uid": "11fcffb4-5cdd-11e9-a7a7-005056883750",
+    "resourceVersion": "779226",
+    "generation": 1,
+    "creationTimestamp": "2019-04-12T04:40:17Z",
+    "labels": {
+      "velero.io/storage-location": "default"
+    }
+  },
+  "spec": {
+    "includedNamespaces": [
+      "*"
+    ],
+    "excludedNamespaces": null,
+    "includedResources": null,
+    "excludedResources": null,
+    "labelSelector": null,
+    "ttl": "720h0m0s",
+    "includeClusterResources": null,
+    "hooks": {
+      "resources": null
+    },
+    "storageLocation": "default",
+    "volumeSnapshotLocations": null
+  },
+  "status": {
+    "version": 1,
+    "expiration": "2019-05-12T04:40:17Z",
+    "phase": "Completed",
+    "validationErrors": null,
+    "startTimestamp": "2019-04-12T04:40:17Z",
+    "completionTimestamp": "2019-04-12T04:42:33Z",
+    "volumeSnapshotsAttempted": 0,
+    "volumeSnapshotsCompleted": 0
+  }
+}

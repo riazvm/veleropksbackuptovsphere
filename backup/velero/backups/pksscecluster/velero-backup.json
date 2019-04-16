@@ -1,0 +1,42 @@
+{
+  "kind": "Backup",
+  "apiVersion": "velero.io/v1",
+  "metadata": {
+    "name": "pksscecluster",
+    "namespace": "velero",
+    "selfLink": "/apis/velero.io/v1/namespaces/velero/backups/pksscecluster",
+    "uid": "fd1ea817-5fb8-11e9-87c6-005056883750",
+    "resourceVersion": "1218056",
+    "generation": 1,
+    "creationTimestamp": "2019-04-15T19:59:33Z",
+    "labels": {
+      "velero.io/storage-location": "default"
+    }
+  },
+  "spec": {
+    "includedNamespaces": [
+      "*"
+    ],
+    "excludedNamespaces": null,
+    "includedResources": null,
+    "excludedResources": null,
+    "labelSelector": null,
+    "ttl": "720h0m0s",
+    "includeClusterResources": null,
+    "hooks": {
+      "resources": null
+    },
+    "storageLocation": "default",
+    "volumeSnapshotLocations": null
+  },
+  "status": {
+    "version": 1,
+    "expiration": "2019-05-15T19:59:33Z",
+    "phase": "Completed",
+    "validationErrors": null,
+    "startTimestamp": "2019-04-15T19:59:33Z",
+    "completionTimestamp": "2019-04-15T20:01:51Z",
+    "volumeSnapshotsAttempted": 0,
+    "volumeSnapshotsCompleted": 0
+  }
+}
